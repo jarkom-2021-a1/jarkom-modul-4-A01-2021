@@ -220,7 +220,7 @@ iface eth2 inet static
 	netmask 255.255.255.252
 auto eth3
 iface eth3 inet static
-	address 10.100.100.2
+	address 10.100.100.105
 	netmask 255.255.255.252
 auto eth4
 iface eth4 inet static
@@ -304,7 +304,7 @@ iface eth1 inet static
 	netmask 255.255.255.0
 auto eth2
 iface eth2 inet static
-	address 10.100.100.4
+	address 10.100.100.109
 	netmask 255.255.255.252	
 ```
 7. Seastone
