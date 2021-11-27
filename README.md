@@ -172,7 +172,7 @@ iface eth2 inet static
 	netmask 255.255.255.252
 auto eth3
 iface eth3 inet static
-	address 10.0.0.1
+	address 10.100.100.2
 	netmask 255.255.255.252
 auto eth4
 iface eth4 inet static
@@ -256,7 +256,7 @@ iface eth1 inet static
 	netmask 255.255.255.0
 auto eth2
 iface eth2 inet static
-	address 10.0.0.1
+	address 10.100.100.4
 	netmask 255.255.255.252	
 ```
 7. Seastone
@@ -275,4 +275,18 @@ iface eth1 inet static
 
 Pada Server :
 1. Doriki
+```
+auto eth0
+iface eth0 inet static
+	address 10.100.100.1
+	netmask 255.255.255.252
+	gateway 10.0.0.2
+```
 2. Fukurou
+```
+auto eth0
+iface eth0 inet static
+	address 10.100.100.3
+	netmask 255.255.255.252
+	gateway 10.0.0.4
+```
