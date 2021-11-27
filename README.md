@@ -326,17 +326,39 @@ Pada Server :
 ```
 auto eth0
 iface eth0 inet static
-	address 10.100.100.1
+	address 10.100.100.106
 	netmask 255.255.255.252
-	gateway 10.0.0.2
+	gateway 10.100.100.105
 ```
 2. Fukurou
 ```
 auto eth0
 iface eth0 inet static
-	address 10.100.100.3
+	address 10.100.100.110
 	netmask 255.255.255.252
-	gateway 10.0.0.4
+	gateway 10.100.100.109
+```
+
+Routing :
+- Foosha
+```
+route add -net 192.169.0.0 netmask 255.255.192.0 gw 192.169.64.2
+route add -net 192.169.128.0 netmask 255.255.224.0 gw 192.169.160.2
+route add -net 10.100.100.108 netmask 255.255.255.252 gw 192.169.160.2
+```
+- Water7
+```
+route add -net 192.169.0.0 netmask 255.255.240.0 gw 192.169.16.2
+```
+- Guanhao
+```
+route add -net 192.169.0.0 netmask 255.255.192.0 gw 192.169.64.2
+route add -net 192.169.128.0 netmask 255.255.224.0 gw 192.169.160.2
+route add -net 10.100.100.108 netmask 255.255.255.252 gw 192.169.160.2
+```
+- Oimo
+```
+route add -net 192.169.148.0 netmask 255.255.252.0 gw 192.169.144.2
 ```
 
 Pada Foosha :
