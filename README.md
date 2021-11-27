@@ -74,3 +74,156 @@ A13	|192.169.20.0|	255.255.252.0
 
 ![tree](https://user-images.githubusercontent.com/65168221/143671427-a8002d99-4f0d-4b68-8705-b686c24f7b3b.png)
 
+## Setting ip pada gns3 :
+Pada ```Edit Network Connection``` setting ip seperti berikut : 
+Pada Client :
+1. Cipher
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.32.2
+	netmask 255.255.252.0
+	gateway 192.169.32.1
+```
+2. Blueno (A1) :
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.192.2
+	netmask 255.255.252.0
+	gateway 192.169.192.1
+```
+3. Jipangu
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.8.2
+	netmask 255.255.255.128
+	gateway 192.169.8.1
+```
+4. Calmbelt
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.0.2
+	netmask 255.255.248.0
+	gateway 192.169.0.1
+```
+5. Jabra
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.132.2
+	netmask 255.255.252.0
+	gateway 192.169.132.1
+```
+6. Maingate
+```
+iface eth0 inet static
+	address 192.169.128.3
+	netmask 255.255.254.0
+	gateway 192.169.128.1
+```
+7. Jorge
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.130.2
+	netmask 255.255.255.240
+	gateway 192.169.130.1
+```
+8. Courtyard
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.0.3
+	netmask 255.255.248.0
+	gateway 192.169.0.1
+```
+9. Enieslobby
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.144.3
+	netmask 255.255.255.0
+	gateway 192.169.144.1
+```
+10. Elena
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.148.2
+	netmask 255.255.252.0
+	gateway 192.169.148.1
+```
+
+Pada Router :
+1. Foosha
+```
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+	address 192.169.192.1
+	netmask 255.255.252.0
+```
+2. Water7
+```
+auto eth1
+iface eth1 inet static
+	address 192.169.32.1
+	netmask 255.255.252.0
+```
+3. Pucci
+```
+auto eth0
+iface eth0 inet static
+	address 192.169.16.2
+	netmask 255.255.255.252
+	gateway 192.169.16.1
+auto eth1
+iface eth1 inet static
+	address 192.169.0.1
+	netmask 255.255.248.0
+auto eth2
+iface eth2 inet static
+	address 192.169.8.1
+	netmask 255.255.255.128
+```
+4. Guanhao
+```
+auto eth1
+iface eth1 inet static
+	address 192.169.132.1
+	netmask 255.255.252.0
+auto eth2
+iface eth2 inet static
+	address 192.169.128.1
+	netmask 255.255.254.0
+```
+5. Alabasta
+```
+auto eth1
+iface eth1 inet static
+	address 192.169.130.1
+	netmask 255.255.255.240
+```
+6. OIMO
+```
+auto eth1
+iface eth1 inet static
+	address 192.169.144.1
+	netmask 255.255.255.0
+```
+7. Seastone
+```
+auto eth1
+iface eth1 inet static
+	address 192.169.148.1
+	netmask 255.255.252.0
+```
+
+Pada Server :
+1. Doriki
+2. Fukurou
