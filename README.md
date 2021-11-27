@@ -162,18 +162,38 @@ Pada Router :
 ```
 auto eth0
 iface eth0 inet dhcp
-
 auto eth1
 iface eth1 inet static
 	address 192.169.192.1
-	netmask 255.255.252.0
+	netmask 255.255.252.0	
+auto eth2
+iface eth2 inet static
+	address 192.169.64.1
+	netmask 255.255.255.252
+auto eth3
+iface eth3 inet static
+	address 10.0.0.1
+	netmask 255.255.255.252
+auto eth4
+iface eth4 inet static
+	address 192.169.160.1
+	netmask 255.255.255.252
 ```
 2. Water7
 ```
+auto eth0
+iface eth0 inet static
+	address 192.169.64.2
+	netmask 255.255.255.252
+	gateway 192.169.64.1
 auto eth1
 iface eth1 inet static
 	address 192.169.32.1
 	netmask 255.255.252.0
+auto eth2
+iface eth2 inet static
+	address 192.169.16.1
+	netmask 255.255.255.252
 ```
 3. Pucci
 ```
@@ -193,6 +213,11 @@ iface eth2 inet static
 ```
 4. Guanhao
 ```
+auto eth0
+iface eth0 inet static
+	address 192.169.160.2
+	netmask 255.255.255.252
+	gateway 192.169.160.1
 auto eth1
 iface eth1 inet static
 	address 192.169.132.1
@@ -201,9 +226,18 @@ auto eth2
 iface eth2 inet static
 	address 192.169.128.1
 	netmask 255.255.254.0
+auto eth3
+iface eth3 inet static
+	address 192.169.152.1
+	netmask 255.255.255.252
 ```
 5. Alabasta
 ```
+auto eth0
+iface eth0 inet static
+	address 192.169.128.2
+	netmask 255.255.254.0
+	gateway 192.169.128.1
 auto eth1
 iface eth1 inet static
 	address 192.169.130.1
@@ -211,17 +245,32 @@ iface eth1 inet static
 ```
 6. OIMO
 ```
+auto eth0
+iface eth0 inet static
+	address 192.169.152.2
+	netmask 255.255.255.252
+	gateway 192.169.152.1
 auto eth1
 iface eth1 inet static
 	address 192.169.144.1
 	netmask 255.255.255.0
+auto eth2
+iface eth2 inet static
+	address 10.0.0.1
+	netmask 255.255.255.252	
 ```
 7. Seastone
 ```
+auto eth0
+iface eth0 inet static
+	address 192.169.144.2
+	netmask 255.255.255.0
+	gateway 192.169.144.1
 auto eth1
 iface eth1 inet static
 	address 192.169.148.1
 	netmask 255.255.252.0
+
 ```
 
 Pada Server :
