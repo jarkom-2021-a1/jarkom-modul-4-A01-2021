@@ -44,13 +44,13 @@ Total	|5845|	/19
 7. map ip sesuai tabel berikut
 ![image](https://user-images.githubusercontent.com/55443217/143681521-ffe4afb1-09e3-43b4-a6e5-237df6030848.png)
 
-8. set routing pada tiap router
+8. set routing pada tiap router  
 ![image](https://user-images.githubusercontent.com/55443217/143681601-c1a65ed5-4f1b-4387-ba96-793122db7e92.png)
 
-9. set interface pada tiap router
+9. set interface pada tiap router  
 ![image](https://user-images.githubusercontent.com/55443217/143681612-478f111c-2229-4904-a1d5-7357d65378c9.png)
 
-10. set alamat ip 
+10. set alamat ip  
 ![image](https://user-images.githubusercontent.com/55443217/143681628-0418063a-bea9-43a9-b61d-becd852b06ce.png)
 
 # CIDR
@@ -339,6 +339,12 @@ iface eth0 inet static
 	gateway 10.0.0.4
 ```
 
+Pada Foosha :
+Jalankan ```iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.169.0.0/16```
+
+Pada node selain Foosha :
+Jalankan ```echo nameserver 192.168.122.1 > /etc/resolv.conf```
 
 # Kendala
 1. pada CPT terkadang harus ping lebih dari 1 kali baru bisa sukses
+2. Kesusahan menambahkan route pada CIDR
