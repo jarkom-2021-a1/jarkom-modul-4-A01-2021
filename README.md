@@ -5,6 +5,54 @@
 - 05111940000124 Gerry Sihaj
 - 05111940000130 Adrian
 
+# VLSM
+Subnet | Jumlah IP | Netmask
+--- | --- | --- 
+A1  	|721|	/22
+A2	|2| 	/30
+A3	|2|	/30
+A4	|13|	/28
+A5	|521|	/22
+A6	|1001|	/22
+A7	|252|	/24
+A8	|701|	/22
+A9	|101|	/25
+A10	|2|	/30
+A11	|2|	/30
+A12	|2021|	/21
+A13	|2|	/30
+A14	|2|	/30
+A15	|502|	/23
+Total	|5845|	/19
+
+# langkah
+1. menggambar grafik dengan root awal subnet 19 dengan ip [prefix].0.0/19
+![image](https://user-images.githubusercontent.com/55443217/143681340-58f32995-3adc-4a15-934e-bd2503206874.png)
+
+2. membagi subnet menjadi 16 kiri dan 16 kanan dengan mask 20
+
+3. karena tidak ada yang membutuhkan mask 20 maka lanjut pembagian 
+4. node yang kiri dibagi menjadi 8 kiri dan 8 kanan mask 21. setelah itu ambil satu alamat ip untuk di assign ke A12
+![image](https://user-images.githubusercontent.com/55443217/143681417-8e77f401-60f3-4d58-9c2d-e7c0506cb7d9.png)
+
+5. ulangi terus sampai semua subnet mendapat ip
+![vlsm](https://user-images.githubusercontent.com/55443217/143681439-e8b8eebe-31de-4f4f-8d2a-ad244f3b86e2.png)
+
+6. buat topologi CPT
+![image](https://user-images.githubusercontent.com/55443217/143681497-f67456a4-ffe9-4554-ae63-8fa7815a1aa9.png)
+
+7. map ip sesuai tabel berikut
+![image](https://user-images.githubusercontent.com/55443217/143681521-ffe4afb1-09e3-43b4-a6e5-237df6030848.png)
+
+8. set routing pada tiap router
+![image](https://user-images.githubusercontent.com/55443217/143681601-c1a65ed5-4f1b-4387-ba96-793122db7e92.png)
+
+9. set interface pada tiap router
+![image](https://user-images.githubusercontent.com/55443217/143681612-478f111c-2229-4904-a1d5-7357d65378c9.png)
+
+10. set alamat ip 
+![image](https://user-images.githubusercontent.com/55443217/143681628-0418063a-bea9-43a9-b61d-becd852b06ce.png)
+
 # CIDR
 ## Subnet :
 Subnet | Jumlah IP | Netmask
