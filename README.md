@@ -338,3 +338,7 @@ iface eth0 inet static
 	netmask 255.255.255.252
 	gateway 10.0.0.4
 ```
+
+
+# Kendala
+1. pada CPT terkadang harus ping lebih dari 1 kali baru bisa sukses
