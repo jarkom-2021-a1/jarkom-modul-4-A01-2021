@@ -352,9 +352,9 @@ route add -net 192.169.0.0 netmask 255.255.240.0 gw 192.169.16.2
 ```
 - Guanhao
 ```
-route add -net 192.169.0.0 netmask 255.255.192.0 gw 192.169.64.2
-route add -net 192.169.128.0 netmask 255.255.224.0 gw 192.169.160.2
-route add -net 10.100.100.108 netmask 255.255.255.252 gw 192.169.160.2
+route add -net 192.169.130.0 netmask 255.255.255.240 gw 192.169.128.2
+route add -net 192.169.144.0 netmask 255.255.248.0 gw 192.169.152.2
+route add -net 10.100.100.108 netmask 255.255.255.252 gw 192.169.152.2
 ```
 - Oimo
 ```
