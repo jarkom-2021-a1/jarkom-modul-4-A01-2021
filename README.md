@@ -71,4 +71,6 @@ A13	|192.169.20.0|	255.255.252.0
 ![7](https://user-images.githubusercontent.com/65168221/143670753-65181d03-131a-4e58-897e-d806a7ad00e7.png)
 
 ## Tree :
-![tree](https://user-images.githubusercontent.com/65168221/143671287-e49230af-1161-43ab-9480-7da015a8ed8a.png)
+
+![tree](https://user-images.githubusercontent.com/65168221/143671427-a8002d99-4f0d-4b68-8705-b686c24f7b3b.png)
+
